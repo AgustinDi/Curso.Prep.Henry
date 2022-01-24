@@ -1,0 +1,67 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años.
+Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Variables
+	* Strings
+	* Funciones (argumentos, `return`)
+	* Declaraciones `if`
+	* Valores booleanos (`true`, `false`)
+
+|---|
+
+Las variables pueden ser consideradas cajitas, estas pueden guardar adentro suyo distintos tipos de datos:
+
+    Strings = cadenas de texto, texto en si, se las diferencia porque van entre comillas "", '',´´.
+    Numeros = un numero sin mas puede ser guardado como variable, el escribir un numero sin nada mas hace que sea considerado como tal.
+    Booleano = un valor verdadero o falso, si o no, 1 o 0.
+    funciones = Explicadas mas adelante.
+    U otras variables.
+
+estas cajas llevan un nombre, para referirnos a una variable simplemente escribimos su nombre y para declararla utilizamos var, let o const, para especificar que creamos una variable:
+
+    por ej:
+
+    var nombre = "agus"      //acabo de guardar en la nueva variable nombre el valor tipo string "agus".
+
+    nombre = "cande"         //ahora le dije a la variable nombre que sea "cande", su valor cambió.
+
+if es un condicional, esto que significa? que cuando una condicion se cumple (si, 10 es mas grande que 2 o no, 5 no es mas grande que 10), se ejecuta un bloque de codigo {};
+
+    Syntaxis:   if (condicion){bloque de codigo};
+
+si la condicion devuelve true (verdadero) entonces el codigo si se ejecuta, caso contrario no se ejecuta y se lo saltea.
+
+    ej:
+
+    if (nombre == "cande"){
+        var resultado = "si es igual";
+    }
+
+ahora, al ejecutar este codigo preguntamos: Si nombre  es igual a "cande" entonces ejecuta esto, si no, no lo ejecuta.
+
+adentro del bloque de codigo podemos ver que se crea una variable resultado y dentro se guarda "si es igual".
+
+Las funciones son bloques de codigos que pueden ser ejecutados en cualquier momento, estos no son ejecutados por el codigo, sino que son llamados y ejecutados en algun momento.
+estas se forman de:
+
+    function comprobarNombre(nombre){
+        var resultado = "no es igual"
+        if (nombre == "cande"){
+        var resultado = "si es igual";
+        }
+        return resultado;
+    }
+
+bien!, acabamos de declarar una funcion, llamada comprobarNombre, a la que se le pasa un argumento, una variable que luego es usada dentro del bloque de codigo.
+En este bloque se crea la variable resultado, que guarda el string "no es igual", despues hay un if, con una condicion, si el nombre es igual al string "cande" se va a guardar en la variable resultado "si es igual",
+ y su valor va a cambiar, como lo que recien estabamos explicando!.
+una vez que se termina el if, la funcion devuelve o "retorna" un valor, este es el valor de resultado. que dependiendo de lo que pasamos por nombre va a dar un "resultado" u otro.
+
+Donde se retorna este valor? este valor se devuelve en donde la funcion fue llamada!, llamemos a la funcion que recien creamos:
+
+    var prueba;
+    prueba = comprobarNombre("agus");
+
+aqui creamos la variable prueba, esta esta vacia, pero despues ejecutamos comprobarNombre y entre parentesis le pasamos el argumento o parametro que queremos que use la funcion, en este caso es "agus".
+La funcion se ejecuta, si vemos el codigo de antes nos damos cuenta que la condicion no se da, porque el parametro nombre que pasamos no es igual a "cande", en ese caso resultado queda igual, con el valor de "no es igual"
+y al ser retornado guarda en donde la llamamos el resultado, entonces ahora prueba va a ser igual a "no es igual".

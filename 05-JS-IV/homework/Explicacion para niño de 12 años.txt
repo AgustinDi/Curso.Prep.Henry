@@ -1,0 +1,41 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+    *Objetos
+    *Propiedades
+    *Métodos
+    *Bucle for…in
+    *Notación de puntos vs notación de corchetes
+
+|---|
+
+Los objetos son un conjunto de propiedades y metodos, que significa esto? que esta Gran caja (objeto) tiene distintas cajas adentro, estas ultimas tienen propiedades o sea valores
+    
+    por ej; agus es el alumno numero 13, entonces el objeto numero 13, que es un alumno (la Gran Caja) llamada "Alumno_13", tiene la propiedad (Caja) "nombre" con el valor "Agus".
+
+    *A diferencia de un array, ahora el nombre de las cajas son un string (cadena de texto).
+
+Un metodo es una funcion, esto antes lo explicamos, cuando hablamos de un metodo nos referimos a una funcion dentro de una caja adentro de la gran caja, o sea, del objeto.
+
+El bucle for in es muy parecido al bucle for, a diferencia de este que itera x cantidad de veces, el for in itera pero da una vuelta agarrando un valor del objeto y te da la posibilidad de usarlo en un bloque de codigo.
+
+Para poder usar las propiedades o metodos de un objetos podemos referirnos a ellos de dos maneras, con [] o con un .;
+    La diferencia de estas es que si vamos a utilizar el nombre de la propiedad o metodo usemos la notacion de puntos, ya que vamos a escribir literalmente  (nosotros) el nombre de esta caracteristica.
+    En cambio, cuando busquemos entrar a una de estas propiedades o metodos mediante el texto que hay en una variable debemos usar corchetes.
+
+    por ej:     
+    var objeto = {"nombre": "cande", "edad": 14,};
+
+Ahora si quiero referirme a uno de estos datos deberia usar . si es que se cual va a ser:
+
+    objeto.nombre    =    "cande"
+
+La otra forma seria objeto["nombre"], pero no es muy recomendada, ya que para los corchetes solemos usar variables
+
+    por ej:     
+    var i = "edad";
+    objeto[i]   =    14;
+
+NO hay que confundirse, al usar . escribimos literalmente el nombre de la propiedad, no podemos hacer usar una variable:
+
+    objeto.i    !=   14; 
+    objeto.i     =   undefined;

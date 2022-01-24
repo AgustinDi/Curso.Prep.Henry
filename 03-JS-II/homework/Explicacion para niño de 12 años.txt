@@ -9,13 +9,14 @@ cualquier agujero en tu comprensión.
 
 * Usamos 'for' para repetir un bloque de codigo la cantidad de veces que nosotros busquemos, dando un numero inicial y sumandole a este "uno" 
 Cada vez que el codigo se ejecute haciendolo llegar a el segundo numero que le damos. (bucle for no se basa unicamente en este tipo de suma (i++)
-y tambien no hable de la comparacion (i >= 10) que puede cambiar dependiendo de nuestras necesidades).
+y tambien no hable de la comparacion (i >= 10) que puede cambiar dependiendo de nuestras necesidades), al final, en cada iteracion (cada vez que se ejecuta el bloque de codigo) el valor de i cambia,
+podemos usar esto para poder recorrer arrays o ejecutar x cantidad de veces el bloque de codigo.
 
 * Los operadores logicos (`&&`, `||`, `!`) son usados en las expresiones como "verbos" para crear mas posibilidades de comparacion o negar
 un valor booleano, o sea, un valor verdadero o falso, el uso de estos operadores son:
 
- && = AND, significa Y, por ejemplo, queremos preguntar si 8 es igual a 4 Y a 8, nos devolveria NO, porque al ser Y ambas deben ser verdaderas.
+ && = AND, significa Y, por ejemplo, queremos preguntar si 8 es igual a 4 Y a 8, nos devolveria NO, porque al ser Y ambas deben ser verdaderas.    x && y   => ambas deben ser verdaderas
  
- || = OR, Caso contrario, este operador significa O, si es uno O es el otro, comparado con el ej. anterior es 4 "ó" 8 nos devolveria true porque una es verdadera.
+ || = OR, Caso contrario, este operador significa O, si es uno O es el otro, comparado con el ej. anterior es 4 "ó" 8 nos devolveria true porque una es verdadera.    x || y  => uno tiene que ser verdadera.
 
- ! = NOT, Este operador niega (NO) el valor booleano (verdadero o falso) al que se le aplica, entonces por ej. si al valor "true" le aplico un NOT "!0true" devolveria "false"
+ ! = NOT, Este operador niega (NO) el valor booleano (verdadero o falso) al que se le aplica, entonces por ej. si al valor "true" le aplico un NOT "!0true" devolveria "false".      !x   => invierte el valor booleano de x.
