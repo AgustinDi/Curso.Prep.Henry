@@ -1,0 +1,15 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* Arrays
+
+|---|
+
+Un array es un conjunto de datos, muchas cajitas dentro de una gran caja, estas cajitas llevan un numero, empezando por cero, para identificarlas, dentro de cada cajita se puede guardar cualquier tipo de dato y nos referimos a esta cajita con el numero que tiene cada una.
+
+ como ejemplo: la "caja" es llamada "libros" y sus cajitas son nombres de libros, "C@ro dice", "Harry Potter" y "Ready player one".
+
+ para poder trabajar con un nombre de los libros nos referimos a su posicion dentro de "brackets" o corchetes [].
+
+ entonces si se quiere referir a Ready player one usamos la posicion 2, ya que se empieza a contar de cero.
+
+ quedaria asi: libros[2] === "Ready player one".
