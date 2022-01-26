@@ -1,0 +1,39 @@
+1.En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+    *prototype
+    *Constructors (de Clases)
+
+|---|
+
+__proto__ es un objeto "padre" por asi llamarlo, cuando creamos un objeto nuevo el __proto__ seria el objeto (con las propiedades y metodos [ya lo vimos antes]) *base*, o el objeto antecesor, donde se construye el nuevo, esto que significa? que este nuevo objeto puede usar estas propiedades y metodos del __proto__, si no se encuentra algo con x nombre en las propiedades o metodos del objeto nuevo se lo busca alli, en el proto.
+Todo js es un objeto y podemos entrar a el __proto__ de cada objeto hasta llegar al objeto padre, que seria Object.
+
+ahora, prototype, es usado para agregar a el __proto__ metodos y propiedades, por ejemplo, cuando creamos una nueva clase y al proto de esta queremos agregarle un metodo nuevo, lo agregariamos asi:
+
+    ej: nuevoObjeto.prototype.nuevoMetodo = function (){};
+
+cuando se llame a nuevoObjeto.nuevoMetodo(), se va a ejecutar la funcion/metodo.
+
+Los constructores de clases son como unas "plantillas", con x propiedades listas para guardar valores y crear un nuevo objeto con esos valores y con la caracteristica de que pertenecen a una clase si es que usamos ES6.
+
+    por ej: 
+    class Animal {
+                constructor (nombre, especie){
+                    this.nombre = nombre,
+                    this.especie = especie;
+                }
+    }
+
+asi queda hecha la plantilla donde vamos a crear nuestros animales, que tienen dos propiedades, para crearlos usamos new:
+
+new Animal("michi","Gato");
+
+Adentro de la clase no hay return porque el new crea su propio return, cuando usamos new hay que guardarlo en ese momento en una variable:
+
+var gato = new Animal("michi","Gato");
+
+y si creamos otro?:
+
+var perro = new Animal("chiquitin","Perro");
+
+entonces ahora tenemos a perro y gato, dos objetos con dos propiedades, una de nombre y otra de tipo, que fueron hechos por el mismo constructor, por ende ambos son Animales.
